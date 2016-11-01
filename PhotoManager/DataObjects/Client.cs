@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotoManager.ProxyClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +18,21 @@ namespace PhotoManager.DataObjects
 
         public string Address { get; set; }
 
-        public string Note { get; set; }
+        public string ClientNote { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; } = new HashSet<Order>();
+
+        public PrxClient CopyToProxy()
+        {
+            PrxClient prxClient = new PrxClient()
+            {
+                Id = this.ClientId,
+                Name = this.ClientName,
+                Address = this.Address,
+                Note = this.ClientNote,
+                PhoneNumber = this.PhoneNumber
+            };
+            return prxClient;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotoManager.ProxyClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -13,14 +14,25 @@ namespace PhotoManager.DataObjects
 
         [Key()]
         [ForeignKey("Order")]
-        public int Id { get; set; }
+        public int WorkTypeId { get; set; }
 
-        public string Name { get; set; }
+        public string WorkTypeName { get; set; }
 
-        public string Note { get; set; }
+        public string WorkTypeNote { get; set; }
 
         public int OrderId { get; set; }
 
         public virtual Order Order { get; set; }
+
+        public PrxWorkType CopyToProxy()
+        {
+            PrxWorkType prxWorkType = new PrxWorkType()
+            {
+                Id = this.WorkTypeId,
+                Name = this.WorkTypeName,
+                Note = this.WorkTypeNote
+            };
+            return prxWorkType;
+        }
     }
 }

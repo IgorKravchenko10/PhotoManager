@@ -22,7 +22,7 @@ namespace PhotoManager
 
         public virtual DbSet<Order> Orders { get; set; }
 
-        public virtual DbSet<WorkType> WorkType { get; set; }
+        public virtual DbSet<WorkType> WorkTypes { get; set; }
 
     }
 
