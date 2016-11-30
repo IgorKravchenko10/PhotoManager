@@ -13,16 +13,11 @@ namespace PhotoManager.DataObjects
     {
 
         [Key()]
-        [ForeignKey("Order")]
         public int WorkTypeId { get; set; }
 
         public string WorkTypeName { get; set; }
 
         public string WorkTypeNote { get; set; }
-
-        public int OrderId { get; set; }
-
-        public virtual Order Order { get; set; }
 
         public PrxWorkType CopyToProxy()
         {

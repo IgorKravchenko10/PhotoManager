@@ -117,28 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ribbonPage1.Text" xml:space="preserve">
-    <value>Главная</value>
-  </data>
-  <data name="navBarOrders.Caption" xml:space="preserve">
-    <value>Заказы</value>
-  </data>
-  <data name="navBarCustomers.Caption" xml:space="preserve">
-    <value>Клиенты</value>
-  </data>
-  <data name="navBarWorkTypes.Caption" xml:space="preserve">
-    <value>Типы заказов</value>
-  </data>
-  <data name="colPhoneNumber.Caption" xml:space="preserve">
-    <value>Номер телефона</value>
-  </data>
-  <data name="colAddress.Caption" xml:space="preserve">
-    <value>Адрес</value>
-  </data>
-  <data name="colName.Caption" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="colNote.Caption" xml:space="preserve">
-    <value>Примечание</value>
-  </data>
 </root>

@@ -21,13 +21,15 @@ namespace PhotoManager.Adapters
                                                OrderState = (OrderState)qr.OrderState,
                                                Price=qr.Price,
                                                WorkAddress=qr.WorkAddress,
-                                               WorkDate=qr.WorkDate
+                                               WorkDate=qr.WorkDate,
+                                               CustomerName=qr.Customer.CustomerName,
+                                               WorkType=qr.WorkType.WorkTypeName
                                            };
             List<PrxOrder> orders = getList.ToList();
             return orders;
         }
 
-        public List<PrxOrder> GetListSql()
+        public static List<PrxOrder> GetListSql()
         {
             List<PrxOrder> prxOrders = new List<PrxOrder>();
 

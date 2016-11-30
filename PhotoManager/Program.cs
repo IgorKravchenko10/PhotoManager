@@ -17,18 +17,16 @@ namespace PhotoManager
         [STAThread]
         static void Main()
         {
-            System.Data.Entity.Database.SetInitializer(new DropCreateDatabaseAlways<PmContext>());
-            using (var pmContext = new PmContext())
-            {
-                pmContext.Database.Initialize(force: true);
-            }
-            SplashScreenManager.ShowForm(typeof(SplashScreen1));
+            //System.Data.Entity.Database.SetInitializer(new DropCreateDatabaseAlways<PmContext>());
+            //using (var pmContext = new PmContext())
+            //{
+            //pmContext.Database.Initialize(force: true);
+            //}
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
 
-            SplashScreenManager.CloseForm();
         }
     }
 }

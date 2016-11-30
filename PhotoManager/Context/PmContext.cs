@@ -18,7 +18,7 @@ namespace PhotoManager
         {
         }
 
-        public virtual DbSet<Client> Clients { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
 
         public virtual DbSet<Order> Orders { get; set; }
 

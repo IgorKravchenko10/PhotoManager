@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraSplashScreen;
 
-namespace PhotoManager
+namespace PhotoManager.Forms
 {
     public partial class SplashScreen1 : SplashScreen
     {

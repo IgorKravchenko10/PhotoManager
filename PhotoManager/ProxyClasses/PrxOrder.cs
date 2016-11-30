@@ -30,13 +30,15 @@ namespace PhotoManager.ProxyClasses
         /// <summary>
         /// Цена заказа
         /// </summary>
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         /// <summary>
         /// Состояние заказа
         /// </summary>
         public OrderState OrderState { get; set; }
 
+        public string CustomerName { get; set; }
 
+        public string WorkType { get; set; }
     }
 }

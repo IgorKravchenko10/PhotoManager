@@ -74,31 +74,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapters\ClientsAdapter.cs" />
+    <Compile Include="Adapters\CustomersAdapter.cs" />
     <Compile Include="Adapters\OrdersAdapter.cs" />
     <Compile Include="Adapters\WorkTypesAdapter.cs" />
-    <Compile Include="DataObjects\Client.cs" />
+    <Compile Include="DataObjects\Customer.cs" />
     <Compile Include="DataObjects\Order.cs" />
     <Compile Include="DataObjects\WorkType.cs" />
     <Compile Include="Context\PmContext.cs" />
+    <Compile Include="Forms\FrmCreateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCreateCustomer.Designer.cs">
+      <DependentUpon>FrmCreateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCreateOrder.Designer.cs">
+      <DependentUpon>FrmCreateOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProxyClasses\PrxBaseClass.cs" />
-    <Compile Include="ProxyClasses\PrxClient.cs" />
-    <Compile Include="ProxyClasses\PrxOrder.cs" />
-    <Compile Include="ProxyClasses\PrxWorkType.cs" />
     <Compile Include="Forms\SplashScreen1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\SplashScreen1.Designer.cs">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyClasses\PrxBaseClass.cs" />
+    <Compile Include="ProxyClasses\PrxCustomer.cs" />
+    <Compile Include="ProxyClasses\PrxOrder.cs" />
+    <Compile Include="ProxyClasses\PrxWorkType.cs" />
+    <Compile Include="_PhotoManager_mdfDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PhotoManager_mdfDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FrmCreateCustomer.resx">
+      <DependentUpon>FrmCreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCreateOrder.resx">
+      <DependentUpon>FrmCreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LookupControlTemplateCustomers.resx" />
+    <EmbeddedResource Include="Forms\MainForm.de.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +144,12 @@
     <EmbeddedResource Include="Forms\MainForm.uk.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,9 +160,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\SplashScreen1.resx">
-      <DependentUpon>SplashScreen1.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\PhotoManager.Adapters.ClientsAdapter.datasource" />
     <None Include="Properties\DataSources\PhotoManager.Adapters.OrdersAdapter.datasource" />
@@ -149,6 +185,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_PhotoManager_mdfDataSet.xsc">
+      <DependentUpon>_PhotoManager_mdfDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_PhotoManager_mdfDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PhotoManager_mdfDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PhotoManager_mdfDataSet.xss">
+      <DependentUpon>_PhotoManager_mdfDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

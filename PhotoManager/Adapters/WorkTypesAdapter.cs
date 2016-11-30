@@ -9,7 +9,7 @@ namespace PhotoManager.Adapters
 {
     public class WorkTypesAdapter
     {
-        public List<PrxWorkType> GetList(PmContext pmContext)
+        public static List<PrxWorkType> GetList(PmContext pmContext)
         {
 
             IQueryable<PrxWorkType> getList = from qr in pmContext.WorkTypes
@@ -23,7 +23,7 @@ namespace PhotoManager.Adapters
             return workTypes;
         }
 
-        public List<PrxWorkType> GetListSql()
+        public static List<PrxWorkType> GetListSql()
         {
             List<PrxWorkType> prxWorkTypes = new List<PrxWorkType>();
 

@@ -117,10 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="colCustomerId.Caption" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="colCustomerName.Caption" xml:space="preserve">
+    <value>І'мя клієнта</value>
+  </data>
+  <data name="colPhoneNumber.Caption" xml:space="preserve">
+    <value>Номер телефону</value>
+  </data>
+  <data name="colAddress.Caption" xml:space="preserve">
+    <value>Адреса клієнта</value>
+  </data>
+  <data name="colCustomerNote.Caption" xml:space="preserve">
+    <value>Примітка</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>865, 320</value>
+  </data>
   <data name="ribbonPage1.Text" xml:space="preserve">
     <value>Головна</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ribbon.Size" type="System.Drawing.Size, System.Drawing">
     <value>1065, 147</value>
   </data>
@@ -133,63 +151,16 @@
   <data name="navBarOrders.Caption" xml:space="preserve">
     <value>Замовлення</value>
   </data>
-  <data name="navBarClients.Caption" xml:space="preserve">
+  <data name="navBarCustomers.Caption" xml:space="preserve">
     <value>Клієнти</value>
   </data>
   <data name="navBarWorkTypes.Caption" xml:space="preserve">
     <value>Типи замовлень</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.CollapsedWidth" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
   <data name="navBarControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 320</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gridControl1.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <assembly alias="DevExpress.Data.v16.1" name="DevExpress.Data.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v16.1">
-    <value>Default</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="DevExpress.XtraEditors.v16.1" name="DevExpress.XtraEditors.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v16.1">
-    <value>Center</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <assembly alias="DevExpress.Utils.v16.1" name="DevExpress.Utils.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v16.1">
-    <value>None</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>865, 320</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+  <data name="$this.CustomerSize" type="System.Drawing.Size, System.Drawing">
     <value>1065, 490</value>
   </data>
 </root>

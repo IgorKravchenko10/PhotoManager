@@ -11,7 +11,6 @@ namespace PhotoManager.DataObjects
 {
     public class Order
     {
-        private string _OrderName;
 
         [Key()]
         public int OrderId { get; set; }
@@ -19,17 +18,7 @@ namespace PhotoManager.DataObjects
         /// <summary>
         /// Название заказа
         /// </summary>
-        public string OrderName
-        {
-            get
-            {
-                return _OrderName;
-            }
-            set
-            {
-                _OrderName = WorkType.WorkTypeName + " " + Client.ClientName;
-            }
-        }
+        public string OrderName { get; set; }
 
         /// <summary>
         /// Дата заказа работы
@@ -49,7 +38,7 @@ namespace PhotoManager.DataObjects
         /// <summary>
         /// Цена заказа
         /// </summary>
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         /// <summary>
         /// Состояние заказа
@@ -58,10 +47,12 @@ namespace PhotoManager.DataObjects
 
         public string OrderNote { get; set; }
 
-        public int ClientId { get; set; }
+        public int CustomerId { get; set; }
 
-        [ForeignKey("ClientId")]
-        public virtual Client Client { get; set; }
+        [ForeignKey("CustomerId")]
+        public virtual Customer Customer { get; set; }
+
+        public int WorkTypeId { get; set; }
 
         public virtual WorkType WorkType { get; set; }
 
